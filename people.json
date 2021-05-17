@@ -1,0 +1,90 @@
+[
+{
+id: 1,
+name: "Alexey Vazhov",
+email: "vaz@mail.ru",
+username: "vozvv",
+ip: "13.12.0.1",
+phone: "+7 (999) 343-34-34",
+published_at: "2021-05-14T05:57:12.817Z",
+created_at: "2021-05-14T05:57:07.592Z",
+updated_at: "2021-05-14T05:57:12.826Z"
+},
+{
+id: 2,
+name: "Mary R Helt",
+email: "jee1982@gmail.com",
+username: "Zachary",
+ip: "23.240.4.44",
+phone: "715-428-8643",
+published_at: "2021-05-14T06:01:37.081Z",
+created_at: "2021-05-14T06:01:35.058Z",
+updated_at: "2021-05-14T06:01:37.090Z"
+},
+{
+id: 3,
+name: "William S May",
+email: "lizzie.trom3@hotmail.com",
+username: "wismay",
+ip: "189.244.230.53",
+phone: "814-683-1471",
+published_at: "2021-05-14T06:02:21.721Z",
+created_at: "2021-05-14T06:02:10.814Z",
+updated_at: "2021-05-14T06:02:21.731Z"
+},
+{
+id: 4,
+name: "James T Patterson",
+email: "remington_gottli@yahoo.com",
+username: "jatpatt",
+ip: "44.73.227.110",
+phone: "443-925-9173",
+published_at: "2021-05-14T06:02:45.361Z",
+created_at: "2021-05-14T06:02:43.537Z",
+updated_at: "2021-05-14T06:02:45.377Z"
+},
+{
+id: 5,
+name: "Samuel E Antle",
+email: "walton2013@yahoo.com",
+username: "samuean",
+ip: "49.61.188.183",
+phone: "260-450-3689",
+published_at: "2021-05-14T06:03:18.862Z",
+created_at: "2021-05-14T06:03:17.480Z",
+updated_at: "2021-05-14T06:03:18.871Z"
+},
+{
+id: 6,
+name: "Jason M Miller",
+email: "laverna.litt@hotmail.com",
+username: "jasonmmiller",
+ip: "122.210.88.204",
+phone: "714-597-1401",
+published_at: "2021-05-14T06:03:49.447Z",
+created_at: "2021-05-14T06:03:48.181Z",
+updated_at: "2021-05-14T06:03:49.456Z"
+},
+{
+id: 7,
+name: "Tyson K Patterson",
+email: "hester.koep7@yahoo.com",
+username: "tysonk",
+ip: "3.200.126.17",
+phone: "+1-202-555-0143",
+published_at: "2021-05-14T06:07:05.676Z",
+created_at: "2021-05-14T06:06:09.174Z",
+updated_at: "2021-05-14T06:07:05.685Z"
+},
+{
+id: 8,
+name: "Alice P Holly",
+email: "nestor.trom1@gmail.com",
+username: "phollya",
+ip: "74.200.187.86",
+phone: "+353 20 915 7589",
+published_at: "2021-05-14T06:07:29.912Z",
+created_at: "2021-05-14T06:07:28.553Z",
+updated_at: "2021-05-14T06:07:29.921Z"
+}
+]

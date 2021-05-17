@@ -5,7 +5,8 @@
       <div class="uk-margin uk-flex">
         <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Введите ваш запрос" v-model="text" @keyup.enter="seachUser">
         <button @click.prevent="seachUser" :disabled="!disabledForm" class="uk-button uk-button-primary">
-          <span uk-icon="search"></span>
+          <span uk-icon="search" v-if="!loader"></span>
+          <div uk-spinner v-else></div>
         </button>
       </div>
       <div class="uk-flex" v-if="text">
@@ -21,11 +22,12 @@ export default {
   data() {
     return {
       text: '',
+      loader: false,
       currentType: null,
       //eslint-disable-next-line
       regEmail: /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i,
       //eslint-disable-next-line
-      regPhone: /^\d+$/,
+      regPhone: /[2-9]{1}\d{2}/,
       //eslint-disable-next-line
       regIp: /\./,
       // 0.0.0.0 template
@@ -74,20 +76,25 @@ export default {
     fetchUsers() {
       this.$store.dispatch('getUser')
     },
+    toggleLoader() {
+      this.loader = !this.loader
+    },
     seachUser() {
       const body = {
         textType: this.currentType[0],
         type: this.currentType[1],
         text: this.text,
       }
-      console.log(this.disabledForm);
+      this.toggleLoader()
       if (this.disabledForm) {
         this.$store.dispatch('seachUser', body)
         .then(() => {
           this.$router.push({ name:'result' })
+          this.toggleLoader()
         })
         .catch(() => {
           alert('Произошла обишка. Перезагрузите страницу и попробуйте снова.')
+          this.toggleLoader()
         })
       }
     }

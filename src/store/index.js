@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore } from 'vuex'
 import env from '../config/env'
 import axios from 'axios'
 
